@@ -22,7 +22,7 @@ const Map = () => {
       try {
         const response = await axios.get('YOUR_GEE_API_ENDPOINT', {
           headers: {
-            'Authorization': `Bearer AIzaSyDrMIpf438J6fm_J7QOzk0H8SwYRoX0gzk`,
+            'Authorization': ``,
           },
         });
         setFloodData(response.data);
@@ -48,7 +48,7 @@ const Map = () => {
   }, []);
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDrMIpf438J6fm_J7QOzk0H8SwYRoX0gzk">
+    <LoadScript googleMapsApiKey="">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={userLocation}
